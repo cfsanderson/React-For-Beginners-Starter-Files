@@ -12,7 +12,6 @@ const Header = (props) => {
         Day
       </h1>
       <h3 className="tagline"><span>{props.tagline}</span></h3>
-      <div>{props.funnyName}</div>
     </header>
   )
 }

@@ -15,7 +15,6 @@ class NotFound extends Component {
     return (
       <div>
         <h2>Not Found!!!</h2>
-        {/* <h2>{this.state.first + this.state.last}</h2> */}
       </div>
     )
   }
