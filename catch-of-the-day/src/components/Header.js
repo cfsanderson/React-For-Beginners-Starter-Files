@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Header = (props) => {
   return (
@@ -12,8 +12,9 @@ const Header = (props) => {
         Day
       </h1>
       <h3 className="tagline"><span>{props.tagline}</span></h3>
+      <div>{props.funnyName}</div>
     </header>
   )
 }
 
-export default Header;
+export default Header

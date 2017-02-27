@@ -22,3 +22,15 @@ export function getFunName() {
 
   return `${rando(adjectives)}-${rando(adjectives)}-${rando(nouns)}`;
 }
+
+export function getSanderson() {
+  const adjectives = ['adamant', 'green', 'tart', 'rough', 'witty', 'premium', 'magenta', 'sore', 'secret', 'sharp', 'military', 'steady', 'limping', 'unnatural', 'doubtful', 'sincere', 'precious', 'tired', 'gifted']
+
+  const names = ['Caleb', 'Cody', 'Cohen', 'Clover']
+
+  return `${rando(adjectives)}-${rando(adjectives)} ${rando(names)}`
+}
+
+export function concat(a, b) {
+  return `But ${a} ${b} is the coolest`
+}

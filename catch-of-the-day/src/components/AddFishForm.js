@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class AddFishForm extends React.Component {
+class AddFishForm extends Component {
 
   createFish(event) {
     event.preventDefault();

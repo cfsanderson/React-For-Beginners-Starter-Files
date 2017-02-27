@@ -1,5 +1,5 @@
-import React from 'react';
-import { getFunName } from '../helpers';
+import React from 'react'
+import { getFunName } from '../helpers'
 
 class StorePicker extends React.Component {
 
@@ -8,11 +8,12 @@ class StorePicker extends React.Component {
   //   this.goToStore = this.goToStore.bind(this);
   // }
 
+  // This ^ (pun intended) is a way to bind "this" to the goToStore method b/c otherwise "this" is only inherently bound to the render function of the class.
+
   goToStore() {
-    event.preventDefault();
-    const storeId = this.storeInput.value;
-    console.log(`Going to ${storeId}`)
-    this.context.router.transitionTo(`/store/${storeId}`);
+    event.preventDefault()
+    const storeId = this.storeInput.value
+    this.context.router.transitionTo(`/store/${storeId}`)
   }
 
   render() {
@@ -30,4 +31,5 @@ class StorePicker extends React.Component {
 StorePicker.contextTypes = {
   router: React.PropTypes.object
 }
-export default StorePicker;
+
+export default StorePicker
